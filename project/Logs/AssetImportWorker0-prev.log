@@ -281,3 +281,35 @@ Received Import Request.
 Start importing Assets/#Script/Global.cs using Guid(ad06430f3d518b8499b5b88256bba2d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be263324b10f1950165ea8225267a333') in 0.000483 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 38.738978 seconds.
+  path: Assets/#Script/basic
+  artifactKey: Guid(8c714a3f1fc06a74490c398ce9767c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#Script/basic using Guid(8c714a3f1fc06a74490c398ce9767c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ea88ca465d0a15ec9f29154413df0ad') in 0.000437 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.740122 seconds.
+  path: Assets/#Script/basic/Palette.cs
+  artifactKey: Guid(143b8b9e805131e47877e3916a551072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#Script/basic/Palette.cs using Guid(143b8b9e805131e47877e3916a551072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdca6ce15370a4b7a1926d385ce965fd') in 0.000456 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.676005 seconds.
+  path: Assets/#Script/game/BlockData.cs
+  artifactKey: Guid(66f470cb839f3d74598e844ac392d22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#Script/game/BlockData.cs using Guid(66f470cb839f3d74598e844ac392d22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a55d50fe284b05f9ae06f40388758def') in 0.000460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 32.529121 seconds.
+  path: Assets/#Script/game/BlockData.cs
+  artifactKey: Guid(66f470cb839f3d74598e844ac392d22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#Script/game/BlockData.cs using Guid(66f470cb839f3d74598e844ac392d22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040b5634cc41097c7f689379252493e7') in 0.000512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
