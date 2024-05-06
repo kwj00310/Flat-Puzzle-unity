@@ -29,8 +29,8 @@ namespace cbs.pang.game
         void OnGUI()
         {
             int index = 0;
-            if (GUI.Button(new Rect(0, (btnHeight * index++), btnWitdh, btnHeight), "OnContainer")) OnContainer();
-            if (GUI.Button(new Rect(0, (btnHeight * index++), btnWitdh, btnHeight), "OffContainer")) OffContainer();
+            if (GUI.Button(new Rect(0, (btnHeight * index++), btnWitdh, btnHeight), "게임시작")) OnContainer();
+            if (GUI.Button(new Rect(0, (btnHeight * index++), btnWitdh, btnHeight), "게임종료")) OffContainer();
 
 
             if (firBlock)

@@ -35,6 +35,7 @@ namespace cbs.pang.game
         public int height; // 세로 블럭 개수
         public float pad; // 카메라 여백 값.
         public int score = 0; //매치 점수 (텍스트 ui추가)
+        public float Timer=0f; //타이머 세팅
 
         #endregion
 
@@ -47,6 +48,7 @@ namespace cbs.pang.game
         float preMatchTime;
         float hintDealy = 3f;
         bool enable = false;
+        bool startflag = false; 
 
         #endregion
 
@@ -154,8 +156,22 @@ namespace cbs.pang.game
                 {
                     completeSelect();
                 }
-
             }
+            if (Timer<=60)
+            {
+                if (startflag == true)
+                {
+                    Timer += Time.deltaTime;
+                    UIManager.Instance.UpdateTimerText(Mathf.RoundToInt(Timer));  // UI Timer 업데이트
+                }
+            }
+            else
+            {
+                startflag = false;
+                Time.timeScale = 0f;
+            }
+            
+            
             // Input Click -> Get Position -> Block Enable Check -> First? Second?
         }
 
@@ -167,6 +183,7 @@ namespace cbs.pang.game
         public void OnContainer()
         {
             enable = true;
+            startflag = true;
             AllBlockPositionReset();
             AllBlockSpawn();
             AllBlockColorSet();
@@ -352,8 +369,10 @@ namespace cbs.pang.game
 
         void matchProcess()
         {
+            
             if (hintBlock && hintBlock._State == Block.State.HINT) hintBlock.OffHint();
             preMatchTime = Time.time;
+
 
             foreach (MatchData data in matchList)
             {

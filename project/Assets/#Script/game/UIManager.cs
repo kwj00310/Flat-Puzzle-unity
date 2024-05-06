@@ -5,6 +5,7 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance; // 싱글턴 인스턴스
     public Text scoreText; // UI에서 점수를 표시할 Text 컴포넌트
+    public Text TimerText; // UI에서 점수를 표시할 Text 컴포넌트
 
     void Awake()
     {
@@ -24,5 +25,10 @@ public class UIManager : MonoBehaviour
     {
         // 점수 업데이트 메소드, 점수가 변경될 때 호출됨
         scoreText.text =newScore.ToString();
+        
+    }
+    public void UpdateTimerText(int newTimer)
+    {
+        TimerText.text =newTimer.ToString();
     }
 }
