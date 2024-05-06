@@ -31,9 +31,7 @@ namespace cbs.pang.game
             int index = 0;
             if (GUI.Button(new Rect(0, (btnHeight * index++), btnWitdh, btnHeight), "OnContainer")) OnContainer();
             if (GUI.Button(new Rect(0, (btnHeight * index++), btnWitdh, btnHeight), "OffContainer")) OffContainer();
-            if (GUI.Button(new Rect(0, (btnHeight * index++), btnWitdh, btnHeight), "AllBlockColorSetDelay")) StartCoroutine(AllBlockColorSetWithDelay(0));
-            if (GUI.Button(new Rect(0, (btnHeight * index++), btnWitdh, btnHeight), "AllBlockColorSet")) AllBlockColorSet();
-            if (GUI.Button(new Rect(0, (btnHeight * index++), btnWitdh, btnHeight), "AllBlockSpawn")) AllBlockSpawn();
+
 
             if (firBlock)
                 GUI.Label(new Rect(0, (btnHeight * index++), btnWitdh, btnHeight),

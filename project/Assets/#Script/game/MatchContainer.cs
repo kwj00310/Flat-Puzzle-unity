@@ -34,6 +34,7 @@ namespace cbs.pang.game
         public int width; // 가로 블록 개수
         public int height; // 세로 블럭 개수
         public float pad; // 카메라 여백 값.
+        public int score = 0; //매치 점수 (텍스트 ui추가)
 
         #endregion
 
@@ -365,7 +366,8 @@ namespace cbs.pang.game
                     continue;
                 }
 
-                // score ++ 
+                score += 10 * length;
+                UIManager.Instance.UpdateScoreText(score);  // UI 업데이트
 
                 switch (data.direction)
                 {
